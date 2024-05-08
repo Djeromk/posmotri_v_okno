@@ -114,7 +114,7 @@ line-height: 21.6px;
 
 .content__list {
     height: 298px;
-    overflow: scroll;
+    overflow: auto;
     position: relative;
 }
 
@@ -124,13 +124,18 @@ line-height: 21.6px;
 }
 
 .title {
-  font-family: Oswald;
+font-family: Oswald;
 font-size: 75px;
-font-weight: 700;
 line-height: 70.5px;
-text-align: left;
 margin-bottom: 24px;
 text-transform: uppercase;
+}
+
+.content__accent::after {
+  content: "-";
+  position: relative;
+  bottom: 6px;
+  ;
 }
 
 .content__accent {
