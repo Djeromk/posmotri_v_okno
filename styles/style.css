@@ -90,6 +90,7 @@ cursor: pointer;
   display: flex;
   column-gap: 30px;
   align-items: end;
+  align-self: center;
 }
 
 .result {
