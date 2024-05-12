@@ -1,3 +1,7 @@
+/* уменьшил у .content__video-card-description-container (line 328)
+максимальную ширину c 200px до 180px и высоту на 101px
+*/
+
 *,
 *::before,
 *::after {
@@ -312,17 +316,21 @@ input:checked ~ .search-form__pseudo-checkbox::after {
   text-overflow: ellipsis;
   color: #fff;
   text-transform: uppercase;
+  white-space: nowrap;
 }
 
 .content__video-card-description {
   font-family: "Fira Sans Condensed", sans-serif;
   font-size: 18px;
   line-height: 16.2px;
+  max-height: 65px;
+  overflow: hidden;
   color: #fff;
 }
 
 .content__video-card-description-container {
-  max-width: 200px;
+  max-width: 180px;
+  max-height: 101px;
   display: flex;
   flex-direction: column;
 }
